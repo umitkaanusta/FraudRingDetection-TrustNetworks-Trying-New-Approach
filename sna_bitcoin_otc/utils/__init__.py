@@ -1,3 +1,3 @@
 """
-A toolbox of functions to process the data
+A toolbox of functions to convert CSV into a real graph
 """
