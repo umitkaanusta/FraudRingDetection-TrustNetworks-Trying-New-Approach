@@ -1,0 +1,4 @@
+snap-stanford==6.0.0
+py-gnuplot==1.1.8
+graphviz==0.16
+pandas==1.3.0
