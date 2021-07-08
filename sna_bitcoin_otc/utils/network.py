@@ -72,5 +72,12 @@ def neo4j_to_nx(driver, query="MATCH (n)-[r]->(c) RETURN *"):
     for node in nodes:
         G.add_node(node.id, labels=node._labels, properties=node._properties)
     for edge in edges:
-        G.add_edge(edge.start_node.id, edge.end_node.id, key=edge.id, type=edge.type, properties=edge._properties)
+        G.add_edge(
+            edge.start_node.id,
+            edge.end_node.id,
+            key=edge.id,
+            type=edge.type,
+            properties=edge._properties,
+            weight=edge._properties["rating"]
+        )
     return G
