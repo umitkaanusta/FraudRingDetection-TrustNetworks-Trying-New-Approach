@@ -63,10 +63,10 @@ def make_network():
 
 
 def neo4j_to_nx(driver, query="MATCH (n)-[r]->(c) RETURN *"):
-    # Create a NetworkX MultiDiGraph using data from Neo4j
+    # Create a NetworkX DiGraph using data from Neo4j
     s = driver.session()
     results = s.run(query)
-    G = nx.MultiDiGraph()
+    G = nx.DiGraph()
     nodes = list(results.graph()._nodes.values())
     edges = list(results.graph()._relationships.values())
     for node in nodes:
