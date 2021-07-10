@@ -1,7 +1,7 @@
 import networkx as nx
 
 
-def fairness_goodness(G: nx.DiGraph):
+def fairness_goodness(G: nx.DiGraph, scale=0.1):
     # Fairness between [0, 1], goodness between [-1, 1]
     fairness = {}
     goodness = {}
@@ -20,7 +20,7 @@ def fairness_goodness(G: nx.DiGraph):
             if len(in_edges_) > 0:
                 curr_g = 0
                 for e in in_edges_:
-                    curr_g += fairness[e[0]] * (e[2] / 10)
+                    curr_g += fairness[e[0]] * (e[2] * scale)
                 curr_g /= len(in_edges_)
                 if not flag_g and abs(curr_g - goodness[node]) < epsilon:
                     flag_g = True
@@ -31,7 +31,7 @@ def fairness_goodness(G: nx.DiGraph):
             if len(out_edges_) > 0:
                 curr_f = 0
                 for e in out_edges_:
-                    curr_f += abs((e[2] / 10) - goodness[e[1]])
+                    curr_f += abs((e[2] * scale) - goodness[e[1]])
                 curr_f /= (2 * len(out_edges_))
                 curr_f = 1 - curr_f
                 if not flag_f and abs(curr_f - goodness[node]) < epsilon:
