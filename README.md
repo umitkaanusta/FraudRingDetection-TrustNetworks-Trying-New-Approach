@@ -33,21 +33,11 @@ TBD
 ## Citations
 
 ```text
-@inproceedings{kumar2016edge,
-  title={Edge weight prediction in weighted signed networks},
-  author={Kumar, Srijan and Spezzano, Francesca and Subrahmanian, VS and Faloutsos, Christos},
-  booktitle={Data Mining (ICDM), 2016 IEEE 16th International Conference on},
-  pages={221--230},
-  year={2016},
-  organization={IEEE}
-}
+Kumar, S., Spezzano, F., Subrahmanian, V. S., & Faloutsos, C. (2016). Edge Weight Prediction in Weighted Signed Networks. 2016 IEEE 16th International Conference on Data Mining (ICDM). doi:10.1109/icdm.2016.0033 
 
-@inproceedings{kumar2018rev2,
-  title={Rev2: Fraudulent user prediction in rating platforms},
-  author={Kumar, Srijan and Hooi, Bryan and Makhija, Disha and Kumar, Mohit and Faloutsos, Christos and Subrahmanian, VS},
-  booktitle={Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining},
-  pages={333--341},
-  year={2018},
-  organization={ACM}
-}
+Kumar, S., Hooi, B., Makhija, D., Kumar, M., Faloutsos, C., & Subrahmanian, V. S. (2018). REV2. Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining - WSDM ’18. doi:10.1145/3159652.3159729 
+
+Meo, P. D., Musial-Gabrys, K., Rosaci, D., Sarnè, G. M. L., & Aroyo, L. (2017). Using Centrality Measures to Predict Helpfulness-Based Reputation in Trust Networks. ACM Transactions on Internet Technology, 17(1), 1–20. doi:10.1145/2981545 
+
+Thedchanamoorthy, G., Piraveenan, M., Kasthuriratna, D., & Senanayake, U. (2014). Node Assortativity in Complex Networks: An Alternative Approach. Procedia Computer Science, 29, 2449–2461. doi:10.1016/j.procs.2014.05.229 
 ```
