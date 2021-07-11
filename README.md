@@ -51,4 +51,6 @@ Kumar, S., Hooi, B., Makhija, D., Kumar, M., Faloutsos, C., & Subrahmanian, V. S
 Meo, P. D., Musial-Gabrys, K., Rosaci, D., Sarnè, G. M. L., & Aroyo, L. (2017). Using Centrality Measures to Predict Helpfulness-Based Reputation in Trust Networks. ACM Transactions on Internet Technology, 17(1), 1–20. doi:10.1145/2981545 
 
 Thedchanamoorthy, G., Piraveenan, M., Kasthuriratna, D., & Senanayake, U. (2014). Node Assortativity in Complex Networks: An Alternative Approach. Procedia Computer Science, 29, 2449–2461. doi:10.1016/j.procs.2014.05.229 
+
+Hooi, B., Shah, N., Beutel, A., Günnemann, S., Akoglu, L., Kumar, M., … Faloutsos, C. (2016). BIRDNEST: Bayesian Inference for Ratings-Fraud Detection. Proceedings of the 2016 SIAM International Conference on Data Mining. doi:10.1137/1.9781611974348.56
 ```
