@@ -1,4 +1,4 @@
-# Identifying Fraud Rings in bitcoin-otc.com Trust Network
+# Identifying Fraud Rings in bitcoin-otc.com Trust Network - Trying a new approach
 
 ## Introduction & Data
 Raw data is taken from https://snap.stanford.edu/data/soc-sign-bitcoin-otc.html
@@ -20,6 +20,22 @@ Approach: Narrow the circle and detect fraud ring members
 - Detect communities with Louvain Modularity, check if those communities are fraud rings by checking fraudster status of each node
   - Calculate each node's fraudster status using a supervised learning model
     - *This model has 0.89 10-fold CV AUC, outlasting all well-known algorithms except REV2 (See Kumar, 2018)
+
+### Our individual fraud detection approach compared with 10 well-known algorithms:
+
+"On this data set, in terms of 10-fold CV AUC"
+
+- REV2: 0.90
+- **Our approach: 0.89**
+- FraudEagle: 0.89
+- Spamicity: 0.88
+- Trustiness: 0.82
+- BAD (Bias-and-Deserve): 0.79
+- SpamBehavior: 0.77
+- ICWSM'13: 0.75
+- BIRDNEST: 0.71
+- SpEagle: 0.69
+- SpEagle+: 0.55
 
 
 ## Key technical decisions
