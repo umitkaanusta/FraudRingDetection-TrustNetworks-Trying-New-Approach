@@ -34,7 +34,7 @@ def fairness_goodness(G: nx.DiGraph, scale=0.1):
                     curr_f += abs((e[2] * scale) - goodness[e[1]])
                 curr_f /= (2 * len(out_edges_))
                 curr_f = 1 - curr_f
-                if not flag_f and abs(curr_f - goodness[node]) < epsilon:
+                if not flag_f and abs(curr_f - fairness[node]) < epsilon:
                     flag_f = True
                 fairness[node] = curr_f
         if flag_f and flag_g:
